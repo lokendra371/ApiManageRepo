@@ -16,9 +16,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ApiManageRepo"
-  spec.version      = "0.0.1"
-  spec.summary      = 'A short description of your framework'
-  spec.description  = 'A longer description of your framework'
+  spec.version      = "0.0.3"
+  spec.summary      = 'A Swift library for managing APIs efficiently.'
+  spec.description  = "ApiManageRepo provides a simple and extensible API management layer, with built-in request routing, logging, and error handling. Suitable for both small and large projects."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
-  spec.platform     = :ios, '11.0'
+  spec.platform     = :ios, '12.0'
   spec.vendored_frameworks = 'ApiManagerLib.xcframework'  # point to your xcframework file
 
 
