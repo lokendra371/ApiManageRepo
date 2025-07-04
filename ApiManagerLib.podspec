@@ -87,7 +87,8 @@ DESC
   spec.source       = { :git => "https://github.com/lokendra371/ApiManageRepo.git", :tag => "#{spec.version}" }
 
   # Binary framework
-  spec.vendored_frameworks = 'ApiManagerLib.xcframework'
+  spec.vendored_frameworks = 'Frameworks/ApiManagerLib.framework'
+
   
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
