@@ -1,0 +1,6 @@
+framework module ApiManagerLib {
+  umbrella header "ApiManagerLib.h"
+  export *
+
+  module * { export * }
+}
