@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint ApiManagerLib.podspec' to ensure this is a
+#  Be sure to run `pod spec lint ApiManageRepo.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,19 +15,17 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "ApiManagerLib"
+  spec.name         = "ApiManageRepo"
   spec.version      = "0.0.1"
-  spec.summary     = "A lightweight Swift library to manage API calls in a modular way."
+  spec.summary      = 'A short description of your framework'
+  spec.description  = 'A longer description of your framework'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-  ApiManagerLib helps streamline network calls and manage APIs in your Swift iOS project. 
-  It's modular, easy to integrate, and improves maintainability.
-DESC
+
   spec.homepage     = "https://github.com/lokendra371/ApiManageRepo"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -39,8 +37,11 @@ DESC
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+
+  spec.platform     = :ios, '11.0'
+  spec.vendored_frameworks = 'ApiManagerLib.xcframework'  # point to your xcframework file
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -58,8 +59,6 @@ DESC
   # spec.authors            = { "Lokendra371" => "lokendrathakur071190@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Lokendra371"
 
-  spec.vendored_frameworks = 'ApiManageRepo/ApiManagerLib.xcframework'
-
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -67,11 +66,8 @@ DESC
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-    spec.platform     = :ios
-    spec.platform     = :ios, "5.0"
-
-    spec.ios.deployment_target = '12.0'
-    spec.osx.deployment_target = '10.13'
+  # spec.platform     = :ios
+  # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -137,7 +133,7 @@ DESC
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
