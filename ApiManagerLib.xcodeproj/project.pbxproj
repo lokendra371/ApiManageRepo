@@ -14,7 +14,7 @@
 		E6EC71AD2E17A67E00B4DCCF /* Exceptions for "ApiManagerLib" folder in "ApiManagerLib" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
-				ApiManagerLib.h,
+				Classes/ApiManagerLib.h,
 			);
 			target = E6EC71A52E17A67E00B4DCCF /* ApiManagerLib */;
 		};
