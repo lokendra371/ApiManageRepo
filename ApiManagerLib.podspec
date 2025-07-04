@@ -17,19 +17,17 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ApiManagerLib"
   spec.version      = "0.0.1"
-  spec.summary      = "A lightweight Swift library to manage API calls in a modular way."
-  spec.swift_versions   = ['5.9']  # 👈 Add this line
+  spec.summary     = "A lightweight Swift library to manage API calls in a modular way."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-spec.description  = <<-DESC
+  spec.description  = <<-DESC
   ApiManagerLib helps streamline network calls and manage APIs in your Swift iOS project. 
   It's modular, easy to integrate, and improves maintainability.
 DESC
-
   spec.homepage     = "https://github.com/lokendra371/ApiManageRepo"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -60,6 +58,8 @@ DESC
   # spec.authors            = { "Lokendra371" => "lokendrathakur071190@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Lokendra371"
 
+  spec.vendored_frameworks = 'ApiManageRepo/ApiManagerLib.xcframework'
+
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -67,13 +67,15 @@ DESC
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   spec.platform     = :ios
-   spec.platform     = :ios, "5.0"
+    spec.platform     = :ios
+    spec.platform     = :ios, "5.0"
 
-  #  When using multiple platforms
-     spec.ios.deployment_target = '12.0'
+    spec.ios.deployment_target = '12.0'
     spec.osx.deployment_target = '10.13'
 
+  #  When using multiple platforms
+  # spec.ios.deployment_target = "5.0"
+  # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
   # spec.visionos.deployment_target = "1.0"
@@ -84,12 +86,10 @@ DESC
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
+
   spec.source       = { :git => "https://github.com/lokendra371/ApiManageRepo.git", :tag => "#{spec.version}" }
 
-  # Binary framework
-  spec.vendored_frameworks = 'Frameworks/ApiManagerLib.framework'
 
-  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
