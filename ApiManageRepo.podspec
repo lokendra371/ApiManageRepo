@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ApiManageRepo"
-  spec.version      = "0.0.3"
+  spec.version      = "1.0.0"
   spec.summary      = 'A Swift library for managing APIs efficiently.'
   spec.description  = "ApiManageRepo provides a simple and extensible API management layer, with built-in request routing, logging, and error handling. Suitable for both small and large projects."
 
